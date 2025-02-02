@@ -1,0 +1,32 @@
+@use '../abstracts' as a;
+
+.movie {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    
+    border-image: linear-gradient(to bottom, #4B6DD3 0%, #950303 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+
+    width: 50%;
+    margin-bottom: 30px;
+    max-width: 280px;
+
+    img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    img:hover {
+        opacity: 0.6;
+        transition: opacity .1s ease-in;
+    }
+
+    .movie-name {
+        margin: 20px 0 10px 0;
+        padding-bottom: 10px;
+        font-size: 18pt;
+        border-bottom: 1px solid a.$white;
+    }
+}
