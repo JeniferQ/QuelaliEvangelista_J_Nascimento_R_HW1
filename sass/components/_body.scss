@@ -1,0 +1,10 @@
+@use '../abstracts' as a;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-con {
+    grid-column: 2/3;
+}
