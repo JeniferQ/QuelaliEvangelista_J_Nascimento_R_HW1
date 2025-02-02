@@ -1,9 +1,7 @@
 @use '../abstracts' as a;
 
 .hero {
-    background: url(../images/hero.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/hero.png);
 
     .grid-con {
         padding: 90px 40px;
@@ -11,19 +9,13 @@
     }
 }
 
-.quote-box {
-    padding: 28px;
+.quote {
     margin-bottom: 40px;
-    border: 1px solid a.$white;
-
-    h2 {
-        font-size: 30pt;
-    }
+    max-width: 520px;
 
     @media (min-width: 768px) {
         max-width: 200px;
         justify-self: center;
         margin-bottom: 0;
     }
-    
 }
