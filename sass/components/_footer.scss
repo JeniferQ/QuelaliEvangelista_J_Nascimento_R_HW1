@@ -1,1 +1,22 @@
 @use '../abstracts' as a;
+
+footer {
+    margin-top: 200px;
+    padding: 30px 0 10px 0;
+    background-color: a.$yellow;
+    
+    p {
+        color: a.$black;
+        font-weight: bold;
+    }
+}
+
+.credits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    #creators {
+        margin: 0 80px 10px 0;
+    }
+}
