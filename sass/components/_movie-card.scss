@@ -23,6 +23,11 @@
         font-size: 18pt;
         border-bottom: 1px solid a.$white;
     }
+    
+    .movie-release {
+        font-size: 12pt;
+        line-height: 18pt;
+    }
 
     @media (min-width: 768px) {
         width: 50%;
