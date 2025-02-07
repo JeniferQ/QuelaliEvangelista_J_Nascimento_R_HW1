@@ -1,8 +1,6 @@
 @use '../abstracts' as a;
 
 .movie {
-    text-align: center;
-    font-weight: bold;
     padding: 20px;
     
     border-image: linear-gradient(to bottom, #4B6DD3 0%, #950303 100%) 1;
@@ -24,6 +22,8 @@
     }
 
     .movie-name {
+        font-weight: bold;
+        text-align: center;
         margin: 20px 0 10px 0;
         padding-bottom: 10px;
         font-size: 18pt;

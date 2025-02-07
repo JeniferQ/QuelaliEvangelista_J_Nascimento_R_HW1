@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as v;
 
-p, h1, h2, h3 {
+a, p, h1, h2, h3 {
     color: v.$white;
     font-family: v.$body-font-family;
 }
@@ -9,7 +9,7 @@ h1, h2, h3 {
     font-size: 24pt;
 }
 
-p {
+a, p {
     font-size: 14pt;
 }
 
