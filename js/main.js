@@ -63,6 +63,7 @@ function getInfo(e) {
     charDetails.style.display = 'grid';
 
     const movieLoader = document.querySelector('#loader2');
+    movieLoader.classList.remove("hidden");
     movieList.innerHTML = '';
 
     movies.forEach(movie => {
