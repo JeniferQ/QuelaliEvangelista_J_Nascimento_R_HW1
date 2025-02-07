@@ -21,8 +21,7 @@ Just enjoy!
 February 2024
 
 ## Credits
-Jenifer Quelali Evangelista
-Rodrigo Nascimento
+Jenifer Quelali Evangelista, Rodrigo Nascimento
 
 ## License
 MIT
