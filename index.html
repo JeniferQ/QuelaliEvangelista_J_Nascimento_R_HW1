@@ -30,109 +30,46 @@
 
     <section class="full-width-grid-con char-selection">
         <div class="grid-con">
-
             <div class="col-span-full directions">
                 <h2 class="underline">Select a character</h2>
-
                 <p>Click on the image to see in which movies <span>your favorite character appears</span> in the Star Wars series.</p>
             </div>
 
-            <div class="col-span-full char-list">
-                <div class="character">
-                    <img class="char-img" src="images/luke.png">
-                    <p>Luke Skywalker</p>
-                </div>
-
-                <div class="character">
-                    <img class="char-img" src="images/luke.png">
-                    <p>Luke Skywalker</p>
-                </div>
-
-                <div class="character">
-                    <img class="char-img" src="images/luke.png">
-                    <p>Luke Skywalker</p>
-                </div>
-
-                <div class="character">
-                    <img class="char-img" src="images/luke.png">
-                    <p>Luke Skywalker</p>
-                </div>
-
-                <div class="character">
-                    <img class="char-img" src="images/luke.png">
-                    <p>Luke Skywalker</p>
-                </div>
-
-                <div class="character">
-                    <img class="char-img" src="images/luke.png">
-                    <p>Luke Skywalker</p>
-                </div>
-            </div>
+            <ul class="col-span-full" id="char-list">
+                <svg id="loader1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><radialGradient id="a11" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)"><stop offset="0" stop-color="#F8E21E"></stop><stop offset=".3" stop-color="#F8E21E" stop-opacity=".9"></stop><stop offset=".6" stop-color="#F8E21E" stop-opacity=".6"></stop><stop offset=".8" stop-color="#F8E21E" stop-opacity=".3"></stop><stop offset="1" stop-color="#F8E21E" stop-opacity="0"></stop></radialGradient><circle transform-origin="center" fill="none" stroke="url(#a10)" stroke-width="15" stroke-linecap="round" stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100" cy="100" r="70"><animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2" values="360;0" keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform></circle><circle transform-origin="center" fill="none" opacity=".2" stroke="#F8E21E" stroke-width="15" stroke-linecap="round" cx="100" cy="100" r="70"></circle></svg>
+            </ul>
         </div>
     </section>
 
-    <section class="full-width-grid-con char-details">
+    <section class="full-width-grid-con hidden" id="char-details">
         <div class="grid-con">
             <div class="col-span-full">
-                <h2 class="underline">Get to know this character</h2>
+                <h2 class="underline yellow">Get to know this character</h2>
     
-                <div class="char-name banner">
-                    <div class="box">
-                        <h3>Luke Skywalker</h3>
+                <div class="char-banner">
+                    <div class="box"> 
+                        <h2 class="char-name"></h2>
                     </div>
+                </div> 
+
+                <h3 class="underline">Appearances</h3>
+                <svg id="loader2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><radialGradient id="a10" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)"><stop offset="0" stop-color="#F8E21E"></stop><stop offset=".3" stop-color="#F8E21E" stop-opacity=".9"></stop><stop offset=".6" stop-color="#F8E21E" stop-opacity=".6"></stop><stop offset=".8" stop-color="#F8E21E" stop-opacity=".3"></stop><stop offset="1" stop-color="#F8E21E" stop-opacity="0"></stop></radialGradient><circle transform-origin="center" fill="none" stroke="url(#a10)" stroke-width="15" stroke-linecap="round" stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100" cy="100" r="70"><animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2" values="360;0" keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform></circle><circle transform-origin="center" fill="none" opacity=".2" stroke="#F8E21E" stroke-width="15" stroke-linecap="round" cx="100" cy="100" r="70"></circle></svg>
+                
+                <div id="movie-list">
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="full-width-grid-con movies">
-        <div class="grid-con">
-            <div class="col-span-full">
-                <h2 class="underline">Appearances</h2>
-
-                <div class="movie-list">
+                <template class="movie-template"> 
                     <div class="movie">
-                        <img class="movie-img" src="images/starwars_new_hope.png">
-                        <p class="movie-name">Movie Name</p>
-                        <p class="movie-release">1992</p>
+                        <img class="movie-img">
+                        <p class="movie-name"></p>
+                        <p class="movie-release"></p>
                     </div>
-
-                    <div class="movie">
-                        <img class="movie-img" src="images/starwars_new_hope.png">
-                        <p class="movie-name">Movie Name</p>
-                        <p class="movie-release">1992</p>
-                    </div>
-
-                    <div class="movie">
-                        <img class="movie-img" src="images/starwars_new_hope.png">
-                        <p class="movie-name">Movie Name</p>
-                        <p class="movie-release">1992</p>
-                    </div>
-
-                    <div class="movie">
-                        <img class="movie-img" src="images/starwars_new_hope.png">
-                        <p class="movie-name">Movie Name</p>
-                        <p class="movie-release">1992</p>
-                    </div>
-
-                    <div class="movie">
-                        <img class="movie-img" src="images/starwars_new_hope.png">
-                        <p class="movie-name">Movie Name</p>
-                        <p class="movie-release">1992</p>
-                    </div>
-
-                    <div class="movie">
-                        <img class="movie-img" src="images/starwars_new_hope.png">
-                        <p class="movie-name">Movie Name</p>
-                        <p class="movie-release">1992</p>
-                    </div>
-                </div>
+                </template>
 
                 <a id="top-arrow"><img src="images/arrow_warm_up.svg"></a>
             </div>
         </div>
     </section>
-
 
     <footer class="full-width-grid-con">
         <div class="grid-con">
