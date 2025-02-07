@@ -7,11 +7,14 @@
 
     img {
         width: 100%;
-        cursor: pointer;
     }
 
     img:hover {
         opacity: 0.6;
         transition: opacity .1s ease-in;
+    }
+
+    img, a {
+        cursor: pointer;
     }
 }

@@ -5,8 +5,16 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: a.$black;
+}
+
+.hidden {
+    display: none;
 }
 
 .grid-con {
@@ -28,83 +36,4 @@ body {
     padding-bottom: 5px;
     margin: 40px 0 30px 0;
     border-bottom: 2px solid a.$white;
-}
-
-.char-selection {
-    text-align: center;
-}
-
-.directions {
-    .underline {
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    p {
-        margin-bottom: 40px;
-    }
-}
-
-.char-list, .movie-list {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 40px;
-
-    @media (min-width: 768px) {
-        gap: 50px;
-    }
-}
-
-.char-details {
-    h2 {
-        color: a.$yellow;
-    }
-
-    .char-name {
-        background-image: url(../images/luke_banner.png);
-        padding: 80px 0;
-
-        .box {
-            width: fit-content;
-            margin-left: 2.5%;
-            max-width: 220px;
-        }
-    }
-}
-
-.movies {
-    h2 {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-#top-arrow {
-    position: absolute;
-    right: 50px;
-    margin-top: 20px;
-
-    background-color: a.$yellow;
-    height: 70px;
-    width: 70px;
-    padding: 10px;
-    border-radius: 50%;
-
-    cursor: pointer;
-    transition: background-color .2s ease-in;
-
-    img {
-        width: 100%;
-        transition: transform .2s ease-in;
-    }
-
-    img:hover {
-        transform: translateY(-2px);
-    }
-}
-
-#top-arrow:hover {
-    background-color:#ffc400;
 }
